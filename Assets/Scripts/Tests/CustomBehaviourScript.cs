@@ -1,23 +1,11 @@
-using static Core.Utils.GameLogicManagement.AssetProcessing;
-using Core.Utils.NamingConventions;
-using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomBehaviourScript : MonoBehaviour
+public class CustomBehaviourScript : WrappedMonoBehaviour
 {
-    private void Start()
+    protected override void OnStart(MonoBehaviour self, List<UnityEngine.Object> assets)
     {
-        StartCoroutine(DeployAssets(LoadAssetsAsync<UnityEngine.Object>(AssetGroupLabel.Default), handle =>
-        {
-            var assets = handle.Result.OrderBy(asset => asset.name).ToList();
-            // Your code here
-            handle.ReleaseOnDestroy(this);
-        }
-        ));
-    }
 
-    private void OnDestroy()
-    {
-        StopAllCoroutines();
     }
 }

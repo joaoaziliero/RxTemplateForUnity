@@ -9,7 +9,7 @@ public class CustomBehaviourScript : MonoBehaviour
     {
         StartCoroutine(DeployAssets(LoadAssetsAsync<UnityEngine.Object>(AssetGroupLabel.Default), handle =>
         {
-            var assets = handle.Result.OrderBy(asset => asset.name);
+            var assets = handle.Result.OrderBy(asset => asset.name).ToList();
             // Your code here
             handle.ReleaseOnDestroy(this);
         }

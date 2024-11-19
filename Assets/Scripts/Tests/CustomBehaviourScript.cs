@@ -6,6 +6,6 @@ public class CustomBehaviourScript : WrappedMonoBehaviour
 {
     protected override void OnStart(MonoBehaviour self, List<UnityEngine.Object> assets)
     {
-
+        // Your code here
     }
 }

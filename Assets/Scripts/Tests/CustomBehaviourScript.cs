@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomBehaviourScript : WrappedMonoBehaviour
+public class CustomBehaviourScript : AssetDeployer
 {
-    protected override void OnStart(MonoBehaviour self, List<UnityEngine.Object> assets)
+    protected override GameObject PrepareTarget(Object[] assets)
     {
         // Your code here
+        return base.PrepareTarget(assets);
     }
 }

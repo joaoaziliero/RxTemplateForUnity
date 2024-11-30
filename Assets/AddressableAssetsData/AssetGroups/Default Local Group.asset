@@ -17,8 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 4aea23d334e6c5948b2a7b3006241dc7
   m_SerializeEntries:
+  - m_GUID: ce8cf3a2ebccd1a449e6bbc892401c04
+    m_Address: Assets/Addressables/A0_Cube.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Default
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d60adf6308aae6e41b270e76b0413049
-    m_Address: Assets/Scripts/Addressables/A0_Loader_Check.asset
+    m_Address: Assets/Addressables/A1_Loader_Check.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - Default

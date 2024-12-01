@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class #SCRIPTNAME# : AssetDeployer
 {
-    protected override GameObject PrepareTarget(Object[] assets)
+    protected override GameObject PrepareTarget(UnityEngine.Object[] assets)
     {
         // Your code here
         return base.PrepareTarget(assets);
